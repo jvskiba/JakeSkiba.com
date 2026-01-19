@@ -1,6 +1,9 @@
+import Navbar from "../components/Navbar"
+
 function Resume() {
   return (
     <main>
+        <Navbar />
       <h1>Resume</h1>
 
       <iframe

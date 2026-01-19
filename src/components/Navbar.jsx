@@ -1,12 +1,19 @@
-import { Link } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
+import styles from './Navbar.module.css'; 
 
 function Navbar() {
+    const navigate = useNavigate()
+
   return (
-    <nav style={{ padding: "1rem", borderBottom: "1px solid #ccc" }}>
-      <Link to="/">Home</Link>{" | "}
-      <Link to="/projects">Projects</Link>{" | "}
-      <Link to="/resume">Resume</Link>
-    </nav>
+    <div className={styles.header}>
+        <img src="/jvs.png" alt='JvS' width={100} height={100}
+                className={styles.logo}/>
+        <div div className={styles.navList}>
+            <button className={`${styles.button}`} onClick={() => navigate("/")}>Home</button>
+            <button className={`${styles.button}`} onClick={() => navigate("/Resume")}>Resume</button>
+            <button className={`${styles.button}`} onClick={() => navigate("/Projects")}>Projects</button>
+        </div>
+    </div>
   )
 }
 

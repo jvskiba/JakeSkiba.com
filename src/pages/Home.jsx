@@ -2,8 +2,8 @@ import Navbar from "../components/Navbar"
 
 function Home() {
   return (
-    <div>
-        <Navbar></Navbar>
+    <div >
+        <Navbar />
         <h1>Jake Skiba</h1>
         <p>Student, Programmer</p>
     </div>
