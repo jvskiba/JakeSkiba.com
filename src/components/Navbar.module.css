@@ -1,8 +1,9 @@
 .header {
-   
+  position: sticky;
   top: 0; 
   right: 0; 
   color: white;
+  background-color: rgba(215, 76, 76, 255);
   padding: 10px;
   text-align: right; 
   width: 100%; /* the header takes full width */
@@ -21,41 +22,12 @@
 
 .button {
   padding: 10px;
-  background-color: rgb(176, 175, 175, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
   border-radius: 1px;
   text-align: center;
   font-weight: bolder;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: larger;
-}
-
-.light {
-  color: white;
-}
-
-.dark {
-  color: black;
-}
-  
-.searchInput {
-  background-color: rgba(220, 213, 213, 0.5);
-  opacity: 0.8;
-}
-
-.searchInput::placeholder {
-  color:white;;
-}
-
-.logo {
-  justify-self: center;
-  align-self: center;
-}
-
-.searchContainer {
-  align-self: center;
-}
-
-.greeting:hover {
-  cursor: default;
 }
