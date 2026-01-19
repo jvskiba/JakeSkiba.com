@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <div className={styles.header}>
-        <div div className={styles.navList}>
+        <div className={styles.navList}>
             <button className={`${styles.button}`} onClick={() => navigate("/")}>Home</button>
             <button className={`${styles.button}`} onClick={() => navigate("/CV")}>CV</button>
             <button className={`${styles.button}`} onClick={() => navigate("/Projects")}>Projects</button>

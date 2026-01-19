@@ -3,7 +3,7 @@
   top: 0; 
   right: 0; 
   color: white;
-  background-color: rgba(215, 76, 76, 255);
+  background-color: var(--color-primary);
   padding: 10px;
   text-align: right; 
   width: 100%; /* the header takes full width */

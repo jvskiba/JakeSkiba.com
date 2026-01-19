@@ -3,9 +3,16 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --color-bg: #1c1c1c;
+  --color-text: #f7f7f7;
+  --color-primary: #d74c4c;
+  --color-primary-dark: #b43f3f;
+  --color-muted: #c5c5c5;
+  --color-border: #e5e5e5;
+
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--color-border);
+  background-color: var(--color-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -54,6 +61,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/*
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,4 +73,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+}*/
