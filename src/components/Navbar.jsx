@@ -1,17 +1,28 @@
-import { useNavigate, useLocation } from "react-router-dom"
-import styles from './Navbar.module.css'; 
+import { useNavigate } from "react-router-dom"
+import styles from './Navbar.module.css'
 
 function Navbar() {
-    const navigate = useNavigate()
+  const navigate = useNavigate()
 
   return (
-    <div className={styles.header}>
-        <div className={styles.navList}>
-            <button className={`${styles.button}`} onClick={() => navigate("/")}>Home</button>
-            <button className={`${styles.button}`} onClick={() => navigate("/CV")}>CV</button>
-            <button className={`${styles.button}`} onClick={() => navigate("/Projects")}>Projects</button>
+    <header className={styles.header}>
+      <nav className={styles.navContainer}>
+        <div className={styles.brand} onClick={() => navigate("/")}>
+          Jake Skiba
         </div>
-    </div>
+        <div className={styles.navButtons}>
+          <button className={styles.button} onClick={() => navigate("/")}>
+            Home
+          </button>
+          <button className={styles.button} onClick={() => navigate("/resume")}>
+            CV
+          </button>
+          <button className={styles.button} onClick={() => navigate("/projects")}>
+            Projects
+          </button>
+        </div>
+      </nav>
+    </header>
   )
 }
 

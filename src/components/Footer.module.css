@@ -1,0 +1,89 @@
+.footer {
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.95);
+  border-top: 1px solid var(--color-border);
+  margin-top: auto;
+  padding: 1.75rem 0 1.25rem 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Row 1: Left-aligned Logo/Name + Right-aligned Socials */
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.brand:hover {
+  opacity: 0.85;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
+.name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socials a {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.socials a:hover {
+  color: var(--color-primary);
+}
+
+/* Row 2: Copyright Bar */
+.bottomRow {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.bottomRow p {
+  margin: 0;
+}
+
+@media (max-width: 550px) {
+  .topRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

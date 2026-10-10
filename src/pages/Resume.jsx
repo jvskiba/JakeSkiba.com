@@ -1,10 +1,8 @@
 import styles from "./Resume.module.css"
-import Navbar from "../components/Navbar"
 
 function Resume() {
   return (
     <>
-      <Navbar />
       <main className={styles.resume}>
         <header className={styles.header}>
           <h1>Curriculum Vitae</h1>
