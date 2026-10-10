@@ -7,7 +7,6 @@ function Resume() {
         <header className={styles.header}>
           <h1>Curriculum Vitae</h1>
         </header>
-
         {/* Education Section */}
         <section className={styles.section}>
           <h2>Education</h2>

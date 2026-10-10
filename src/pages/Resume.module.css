@@ -43,6 +43,11 @@
   margin-bottom: 0.5rem;
 }
 
+/* Allow flex children to shrink below content width so text can wrap */
+.entryHeader > div {
+  min-width: 0;
+}
+
 .entryHeader h3 {
   font-size: 1.15rem;
   font-weight: 600;
@@ -80,6 +85,13 @@
   line-height: 1.55;
 }
 
+.entryMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0; /* Keeps date/location column intact */
+}
+
 .skillsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -107,13 +119,24 @@
   color: var(--color-text);
 }
 
+.subtext {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  margin-top: 0.2rem;
+  line-height: 1.4;
+  overflow-wrap: break-word; /* Enables clean line wrapping on small screens */
+}
+
 @media (max-width: 600px) {
   .entryHeader {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.35rem;
   }
 
   .entryMeta {
     align-items: flex-start;
+    margin-top: 0.25rem;
   }
 }
