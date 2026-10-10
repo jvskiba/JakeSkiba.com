@@ -5,7 +5,7 @@ function Home() {
     <div >
         <Navbar />
         <h1>Jake Skiba</h1>
-        <p>Student, Programmer</p>
+        <p> </p>
     </div>
   )
 }

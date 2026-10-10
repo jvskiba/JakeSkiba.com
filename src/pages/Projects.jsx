@@ -7,8 +7,8 @@ function Projects() {
   return (
     <div>
         <Navbar />
-      <h1>Jake Skiba</h1>
-      <p>Learning, one project at a time.</p>
+      <h1>Projects</h1>
+      <p>Random projects that I've made over the years</p>
       <button onClick={() => navigate("/tetris")}>Tetris Clone</button>
       <button onClick={() => navigate("/flappy_bird")}>Flappy Bird Clone</button>
     </div>
